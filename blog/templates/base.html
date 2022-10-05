@@ -6,17 +6,9 @@
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="{% static 'css/blog.css' %}">
-		<style>
-			body{
-					background: black url(img/banner-bg.jpg);
-			}
-			#panel{
-				border-bottom-style: none
-			}
-		</style>
     </head>
-<body id="bg" style="background-image: url('{% static "img/banner-bg.jpg"%}')";>
-    <div id="panel" class="page-header" >
+<body>
+    <div class="page-header">
 		<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
         <h1><a href="/">Мой блог по D&D</a></h1>
     </div>
