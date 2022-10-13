@@ -1,8 +1,10 @@
 {% extends 'blog/base.html' %}
 {% block content %}
+	<div class="context">
+	<p>На данном сайте вы можете ознакомиться с правилами настольных игр.</p>
+	</div>
             {% for post in posts %}
-                <div class="post">
-                    
+                <div class="post">  
                     <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 					<div class="date">
                         <p>Опубликовано: {{ post.published_date }}</p>
